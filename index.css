@@ -1,0 +1,164 @@
+body {
+   color: white;
+   background-color: rgb(0, 0, 0);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(22, 139, 100);
+}
+
+.container{
+    padding: 0px 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(9, 158, 121);
+    text-decoration: underline;
+}
+
+/* Aumentar tamanho das imagens dos apps */
+main img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+main img:hover {
+    transform: scale(1.1);
+}
+
+/* Aumentar tamanho das letras (slogans) */
+main p, main a {
+    font-size: 20px; /* Aumente o valor conforme desejar */
+}
+
+/* Se quiser também deixar o título maior */
+header h1 {
+    font-size: 40px;
+}
+
+header h2 {
+    font-size: 40px;
+}
+
+/* Efeito de Fade In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para telas menores (celular) */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    main p, main a {
+        font-size: 16px;
+    }
+}
+
+/* Estilo para tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    header img {
+        width: 180px;
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Modo Claro */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode nav {
+    background-color: #ddd;
+}
+
+body.light-mode footer {
+    background-color: #ddd;
+}
+
